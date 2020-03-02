@@ -50,6 +50,7 @@ With the files accessible in the terminal run the following in the command line:
 
 ### help
 ![help](https://github.com/slconsidine/liri-node-appp/blob/master/images/help.PNG)
+![help](images/help.PNG)
 
 ### concert-this
 ![concert-this](https://github.com/slconsidine/liri-node-appp/blob/master/images/concert-taylorswift.PNG)
