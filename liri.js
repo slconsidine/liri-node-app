@@ -30,7 +30,7 @@ var concertSearch = function(userInput) {
                 console.log("------------------------");
                 console.log("Venue Name: " + response.data[i].venue.name);
                 console.log("Venue Location: " + response.data[i].venue.city + ", " + response.data[i].venue.country);
-                var eventDate = response.data[i].dateTime;
+                var eventDate = response.data[i].datetime;
                 console.log("Event Date: " + moment(eventDate).format("MMMM Do YYYY"));
             };
         })
