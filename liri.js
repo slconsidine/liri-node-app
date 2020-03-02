@@ -27,6 +27,7 @@ if (command === "concert-this") {
     axios.get(queryURL).then(
         function(response) {
             for (i = 0; i < response.data.length; i++) {
+                console.log("-------------------------");
                 console.log("Venue Name: " + response.data[i].venue.name);
                 console.log("Venue Location: " + response.data[i].venue.city + ", " + response.data[i].venue.country);
                 var eventDate = response.data[i].datetime;
@@ -87,17 +88,17 @@ if (command === "concert-this") {
             { 
                 type: 'track', 
                 query: searchSong,
-                limit: 1
+                limit: 5
     
             })
             .then(function(response) {
-                console.log(response.tracks);
                 // console.log(response.tracks.items[0].artists[0].name);
                 // console.log(response.tracks.items[0].name);
                 // console.log(response.tracks.items[0].external_urls.spotify);
                 // console.log(response.tracks.items[0].album.name);
                 for (i = 0; i < response.tracks.items.length; i++) {
-                    console.log("Artist(s): " + response.tracks.items[i].artists[i].name);
+                    console.log("-------------------------");
+                    console.log("Artist(s): " + response.tracks.items[i].artists[0].name);
                     console.log("Song Name: " + response.tracks.items[i].name);
                     console.log("Preview Link: " + response.tracks.items[i].external_urls.spotify);
                     console.log("Album Name: " + response.tracks.items[i].album.name);
@@ -191,17 +192,6 @@ if (command === "concert-this") {
     // THESE HAVE ALL BEEN DOWNLOADED
 
 // Make it so liri.js can take in one of the following commands:
-    
-// spotify-this-song
-    // This will show the following information about the song in your terminal/bash window
-        // Artist(s)
-        // The song's name
-        // A preview link of the song from Spotify
-        // The album that the song is from
-        // If no song is provided then your program will default to "The Sign" by Ace of Base.
-
-    // You will utilize the node-spotify-api package in order to retrieve song information from the Spotify API.
-
 // do-what-it-says
     // Using the fs Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
 
