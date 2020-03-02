@@ -28,7 +28,7 @@ This command will search for a movie through the OMDB API using Axios. The resul
 If a movie is not supplied by the user, LIRI Bot will provide data on the movie Mr.Nobody. 
 
 ### do-what-it-says
-This command will take the text from the random.txt file and use it to run a search. The text document will include a command as well as a user input. Once LIRI Bot reads that information, it will run the approprite command function with the coordinating userInput. 
+This command will take the text from the random.txt file and use it to run a search. The text document will include a command as well as a user input. Once LIRI Bot reads that information, it will run the appropriate command function with the coordinating userInput. 
 
 ## Instructions
 With the files accessible in the terminal run the following in the command line:
