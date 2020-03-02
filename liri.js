@@ -102,6 +102,7 @@ var movieSearch = function(userInput) {
                 console.log("Rotten Tomatoes Rating: " + response.data.Ratings[1].Value);
                 console.log("Produced in: " + response.data.Country);
                 console.log("Language: " + response.data.Language);
+                console.log("Plot: " + response.data.Plot);
                 console.log("Actors: " + response.data.Actors);
             }
         )
@@ -133,6 +134,7 @@ var movieSearch = function(userInput) {
                 console.log("Rotten Tomatoes Rating: " + response.data.Ratings[1].Value);
                 console.log("Produced in: " + response.data.Country);
                 console.log("Language: " + response.data.Language);
+                console.log("Plot: " + response.data.Plot);
                 console.log("Actors: " + response.data.Actors);
             }
         )
