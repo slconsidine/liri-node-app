@@ -36,6 +36,34 @@ With the files accessible in the terminal run the following in the command line:
 
 ![command line instructions](images/command-line-screenshot.PNG)
 
+## See it in action!!
+
+### help
+Put help in as the command in the terminal.
+![help](images/help.PNG)
+
+### concert-this
+Searched Taylor Swift's upcoming tour dates using the concert-this command.
+![concert-this](images/concert-taylorswift.PNG)
+
+### spotify-this-song 
+Used the spotify-this-song command with no user input. 
+![spotify-this-song no input](images/spotify-noinput.PNG)
+
+Searched All the Small Things on Spotify using the spotify-this-song command.
+![spotify-this-song](images/spotify-atst.PNG)
+
+### movie-this
+Used the movie-this command with no user input. 
+![movie-this no input](images/movie-noinput.PNG)
+
+Searched Frozen on OMDB using the movie-this command. 
+![movie-this](images/movie-frozen.PNG)
+
+### do-what-it-says
+Ran the do-what-it says command. The random.txt file read 'spotify-this-song, "I Want It That Way"'. 
+![do-what-it-says](images/dwis.PNG)
+
 ## Technology Used
 * JavaScript
 * Node.js
@@ -46,21 +74,4 @@ With the files accessible in the terminal run the following in the command line:
     - node-spotify-api
     - axios
 
-## See it in action!!
 
-### help
-![help](images/help.PNG)
-
-### concert-this
-![concert-this](images/concert-taylorswift.PNG)
-
-### spotify-this-song 
-![spotify-this-song no input](images/spotify-noinput.PNG)
-![spotify-this-song](images/spotify-atst.PNG)
-
-### movie-this
-![movie-this no input](images/movie-noinput.PNG)
-![movie-this](images/movie-frozen.PNG)
-
-### do-what-it-says
-![do-what-it-says](images/dwis.PNG)
