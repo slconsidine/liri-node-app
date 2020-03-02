@@ -34,7 +34,7 @@ This command will take the text from the random.txt file and use it to run a sea
 With the files accessible in the terminal run the following in the command line:
 'node liri.js [put-the-command-here] [put-your-user-search-input-here]'
 
-![command line instructions](https://github.com/slconsidine/liri-node-appp/blob/master/images/command-line-screenshot.PNG)
+![command line instructions](images/command-line-screenshot.PNG)
 
 ## Technology Used
 * JavaScript
@@ -49,19 +49,18 @@ With the files accessible in the terminal run the following in the command line:
 ## See it in action!!
 
 ### help
-![help](https://github.com/slconsidine/liri-node-appp/blob/master/images/help.PNG)
 ![help](images/help.PNG)
 
 ### concert-this
-![concert-this](https://github.com/slconsidine/liri-node-appp/blob/master/images/concert-taylorswift.PNG)
+![concert-this](images/concert-taylorswift.PNG)
 
 ### spotify-this-song 
-![spotify-this-song no input](https://github.com/slconsidine/liri-node-appp/blob/master/images/spotify-noinput.PNG)
-![spotify-this-song](https://github.com/slconsidine/liri-node-appp/blob/master/images/spotify-atst.PNG)
+![spotify-this-song no input](images/spotify-noinput.PNG)
+![spotify-this-song](images/spotify-atst.PNG)
 
 ### movie-this
-![movie-this no input](https://github.com/slconsidine/liri-node-appp/blob/master/images/movie-noinput.PNG)
-![movie-this](https://github.com/slconsidine/liri-node-appp/blob/master/images/movie-frozen.PNG)
+![movie-this no input](images/movie-noinput.PNG)
+![movie-this](images/movie-frozen.PNG)
 
 ### do-what-it-says
-![do-what-it-says](https://github.com/slconsidine/liri-node-appp/blob/master/images/dwis.PNG)
+![do-what-it-says](images/dwis.PNG)
