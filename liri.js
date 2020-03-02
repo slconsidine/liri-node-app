@@ -59,16 +59,14 @@ if (command === "concert-this") {
         } else {
             searchSong += nodeArgs[i];
         }
-      }        
-
-      spotify.search(
-        { 
-            type: 'track', 
-            query: searchSong,
-            limit: 1
-
-        })
-        .then(function(response) {
+      }
+      
+      if (searchSong === "") {
+          spotify.search({
+              type: 'track',
+              query: "The+Sign",
+              limit: 1
+          }) .then(function(response) {
             console.log(response.tracks);
             // console.log(response.tracks.items[0].artists[0].name);
             // console.log(response.tracks.items[0].name);
@@ -84,6 +82,33 @@ if (command === "concert-this") {
         .catch(function(err) {
             console.log(err);
         });
+      } else {
+        spotify.search(
+            { 
+                type: 'track', 
+                query: searchSong,
+                limit: 1
+    
+            })
+            .then(function(response) {
+                console.log(response.tracks);
+                // console.log(response.tracks.items[0].artists[0].name);
+                // console.log(response.tracks.items[0].name);
+                // console.log(response.tracks.items[0].external_urls.spotify);
+                // console.log(response.tracks.items[0].album.name);
+                for (i = 0; i < response.tracks.items.length; i++) {
+                    console.log("Artist(s): " + response.tracks.items[i].artists[i].name);
+                    console.log("Song Name: " + response.tracks.items[i].name);
+                    console.log("Preview Link: " + response.tracks.items[i].external_urls.spotify);
+                    console.log("Album Name: " + response.tracks.items[i].album.name);
+                };
+            })
+            .catch(function(err) {
+                console.log(err);
+            });
+      }
+
+      
 } else if (command === "movie-this") {
     var nodeArgs = process.argv;
     var movieTitle = "";
@@ -151,7 +176,9 @@ if (command === "concert-this") {
                     console.log("Error", error.message);
                 }
                 });
-        }
+    }
+} else if (command === "do-what-it-says") {
+
 }
 
 
