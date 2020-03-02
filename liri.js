@@ -64,10 +64,22 @@ if (command === "concert-this") {
       spotify.search(
         { 
             type: 'track', 
-            query: searchSong 
+            query: searchSong,
+            limit: 1
+
         })
         .then(function(response) {
-            console.log(response);
+            console.log(response.tracks);
+            // console.log(response.tracks.items[0].artists[0].name);
+            // console.log(response.tracks.items[0].name);
+            // console.log(response.tracks.items[0].external_urls.spotify);
+            // console.log(response.tracks.items[0].album.name);
+            for (i = 0; i < response.tracks.items.length; i++) {
+                console.log("Artist(s): " + response.tracks.items[i].artists[i].name);
+                console.log("Song Name: " + response.tracks.items[i].name);
+                console.log("Preview Link: " + response.tracks.items[i].external_urls.spotify);
+                console.log("Album Name: " + response.tracks.items[i].album.name);
+            };
         })
         .catch(function(err) {
             console.log(err);
@@ -162,21 +174,6 @@ if (command === "concert-this") {
         // If no song is provided then your program will default to "The Sign" by Ace of Base.
 
     // You will utilize the node-spotify-api package in order to retrieve song information from the Spotify API.
-
-// movie-this
-    // This will output the following information to your terminal/bash window:
-        //   * Title of the movie.
-        //   * Year the movie came out.
-        //   * IMDB Rating of the movie.
-        //   * Rotten Tomatoes Rating of the movie.
-        //   * Country where the movie was produced.
-        //   * Language of the movie.
-        //   * Plot of the movie.
-        //   * Actors in the movie.
-
-    // If the user doesn't type a movie in, the program will output data for the movie 'Mr. Nobody.'
-
-    // You'll use the axios package to retrieve data from the OMDB API. Like all of the in-class activities, the OMDB API requires an API key. You may use trilogy.
 
 // do-what-it-says
     // Using the fs Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
